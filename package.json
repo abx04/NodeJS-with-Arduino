@@ -1,5 +1,12 @@
 {
-  "name": "Arduino",
-  "version": "0.0.1"
-  
+  "name": "Node with Arduino",
+  "version": "0.0.1",
+  "main":"index.js",
+  "dependencies":{
+    "johnny-five": "^0.11.1",
+    "express": "~4.14.1"
+  },
+  "author": "Abhi",
+  "license": "ISC"
 }
+
