@@ -10,6 +10,5 @@ Dependencies:
   
   To control your arduino with Node please follow the following instructions:
     <a href="http://www.instructables.com/id/NodeJs-and-Arduino/">Node with Arduino</a>
-    
- TO-DO:
-    Add functionality to control brightness of led.
+
+To control brightness of led please connect it to PWM pin (lokout for '~' on the board).The code uses pin 11.hange accordingly.
