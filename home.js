@@ -1,15 +1,16 @@
-var onn=document.getElementById('on');
-var on=document.getElementById('on');
-var on=document.getElementById('blink');
+const on=document.getElementById('on');
+const blink=document.getElementById('blink');
+const brighten=document.getElementById('brighten');
+const submit_brightness=document.getElementById('submit_brightness');
 
-var connect=function(url){
-    var xhr=new XMLHttpRequest();
+let connect=function(url){
+    let xhr=new XMLHttpRequest();
     xhr.open('GET',url,true);
     xhr.send(null);
 
 };
 
-onn.onclick=function () {
+on.onclick=function () {
     connect('/on');
     
 };
@@ -22,4 +23,8 @@ off.onclick=function () {
 blink.onclick=function () {
     connect('/blink');
 
+};
+
+submit_brightness.onclick=function(){
+    connect('/brightness?value='+brighten.value);
 };
